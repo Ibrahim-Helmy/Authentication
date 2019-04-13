@@ -116,6 +116,7 @@ class LogInActivity : AppCompatActivity() {
                     if (p0.isSuccessful) {
                         prograss_bar_login.visibility = View.INVISIBLE
                         val intentToMain = Intent(this@LogInActivity, MainActivity::class.java)
+
                         Toast.makeText(this@LogInActivity, "تم الدخول بحساب فيس☺", Toast.LENGTH_LONG).show()
                         startActivity(intentToMain)
                     }else{
